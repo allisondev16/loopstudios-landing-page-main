@@ -13,6 +13,13 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Josefin Sans', sans-serif;
-  font-size: rem(15);
+  font-size: 0.9375rem;
+  font-weight: 300;
+}
+
+.header {
+  background-image: url("../../images/mobile/image-hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 /*# sourceMappingURL=style.css.map */

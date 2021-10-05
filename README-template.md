@@ -48,6 +48,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 ### Built with
 
+- CSS BEM
+
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
