@@ -17,9 +17,49 @@ body {
   font-weight: 300;
 }
 
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.flex-jc-sb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.flex-jc-c {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.flex-ai-c {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
 .header {
   background-image: url("../../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+.header__logo img {
+  width: 9rem;
+  height: auto;
+}
+
+.header__toggle > span {
+  display: block;
+  width: 1.5rem;
+  height: 0.125rem;
+  background-color: white;
+}
+
+.header__toggle > span:not(:last-child) {
+  margin-bottom: 0.3125rem;
 }
 /*# sourceMappingURL=style.css.map */

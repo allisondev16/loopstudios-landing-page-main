@@ -1,5 +1,29 @@
+@import "functions";
+
 .header {
     background-image: url('../../images/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+
+    &__logo {
+        img {
+        width: rem(144);
+        height: auto;
+        }
+    }
+
+    &__toggle {
+    
+        >span {
+            display: block;
+            width: rem(24);
+            height: rem(2);
+            background-color: $white;
+
+            &:not(:last-child){
+                margin-bottom: rem(5);
+            }
+
+        }
+    }
 }
