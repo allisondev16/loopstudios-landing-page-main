@@ -5,16 +5,29 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    @media (min-width: 64em){
+        background-image: url('../../images/desktop/image-hero.jpg');
+    }
+
+    nav {
+        padding: rem(40) rem(24);
+
+        @media (min-width: 64em) {
+            padding: rem(64) rem(165);
+        }
+    }
+
     &__logo {
         img {
         width: rem(144);
         height: auto;
+        vertical-align: bottom;
         }
     }
 
     &__toggle {
     
-        >span {
+        > span {
             display: block;
             width: rem(24);
             height: rem(2);
@@ -24,6 +37,20 @@
                 margin-bottom: rem(5);
             }
 
+        }
+    }
+
+    &__links {
+        
+        a {
+            text-decoration: none;
+            font-family: 'Alata', sans-serif;
+            color: $white;
+            font-weight: 400;
+
+            &:not(:last-child){
+                margin-right: rem(30);
+            }
         }
     }
 }

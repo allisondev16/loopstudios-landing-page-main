@@ -65,6 +65,15 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 
 - Learned using function in SCSS to convert px to rem.
 
+- To remove the unwanted height of the anchor tag:
+  ```css
+  vertical-align: bottom;
+  ```
+  Reference: https://stackoverflow.com/questions/27999522/anchor-tag-generates-unwanted-height
+
+- ">" means direct child in CSS/SCSS.
+  Reference: https://stackoverflow.com/questions/11894054/why-use-in-css
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:

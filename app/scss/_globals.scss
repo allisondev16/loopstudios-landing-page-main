@@ -34,3 +34,9 @@ body {
         align-items: center;
     }
 }
+
+.hide-for-desktop {
+    @media (min-width: 64em){
+        display: none;
+    }
+}
