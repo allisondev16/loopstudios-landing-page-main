@@ -36,7 +36,13 @@ body {
 }
 
 .hide-for-desktop {
-    @media (min-width: 64em){
+    @media (min-width: 64em) {
+        display: none;
+    }
+}
+
+.hide-for-mobile {
+    @media (max-width: 63.9375em) {
         display: none;
     }
 }

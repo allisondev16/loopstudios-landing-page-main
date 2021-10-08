@@ -6,7 +6,24 @@
     background-size: cover;
 
     @media (min-width: 64em){
-        background-image: url('../../images/desktop/image-hero.jpg');
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../images/desktop/image-hero.jpg');
+    }
+
+    &.open {
+        
+        .header__toggle {
+            > span {
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2) {
+                opacity: 0;
+            }
+
+            > span:last-child {
+                transform: rotate(-45deg);
+            }
+        }
     }
 
     nav {
@@ -32,6 +49,8 @@
             width: rem(24);
             height: rem(2);
             background-color: $white;
+            transition: all 300ms ease-in-out;
+            transform-origin: 2px 1px;
 
             &:not(:last-child){
                 margin-bottom: rem(5);
@@ -51,6 +70,20 @@
             &:not(:last-child){
                 margin-right: rem(30);
             }
+        }
+    }
+
+    &__menu {
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+            font-family: 'Alata', sans-serif;
+            color: $white;
+            font-weight: 400;
+            // continue
+
+            
         }
     }
 }
