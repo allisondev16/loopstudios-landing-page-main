@@ -77,6 +77,9 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Darken the background image using linear-gradient
   Reference: https://dev.to/nazanin_ashrafi/how-to-darken-an-image-with-css-4f5h
 
+- The unit of measure, vh and vw, is relative to 1% of the height/width of the viewport
+  Reference: https://www.w3schools.com/cssref/css_units.asp
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:
