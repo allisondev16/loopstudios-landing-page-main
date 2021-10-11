@@ -195,4 +195,32 @@ body {
     padding: 2.5rem 0rem 2.1875rem 2.8125rem;
   }
 }
+
+.interactive {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.interactive__image {
+  width: 20.4375rem;
+  margin-top: 6rem;
+}
+
+.interactive__title {
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 3.0625rem;
+}
+
+.interactive__details {
+  font-family: 'Alata', sans-serif;
+  color: #8c8c8c;
+  width: 17rem;
+  text-align: center;
+  line-height: 1.75;
+  margin-top: 0px;
+}
 /*# sourceMappingURL=style.css.map */
