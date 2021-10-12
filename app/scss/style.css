@@ -208,11 +208,19 @@ body {
   margin-top: 6rem;
 }
 
+.interactive__text {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
 .interactive__title {
-  font-size: 1.875rem;
+  font-size: 2rem;
   font-weight: 300;
   text-align: center;
   margin-top: 3.0625rem;
+  margin-bottom: 1.125rem;
 }
 
 .interactive__details {
@@ -220,7 +228,7 @@ body {
   color: #8c8c8c;
   width: 17rem;
   text-align: center;
-  line-height: 1.75;
+  line-height: 1.7;
   margin-top: 0px;
 }
 /*# sourceMappingURL=style.css.map */

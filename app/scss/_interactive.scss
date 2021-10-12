@@ -7,13 +7,22 @@
     &__image {
         width: rem(327);
         margin-top: rem(96);
+
+        @media (min-width: 64em) {
+            //to be continued
+        }
+    }
+
+    &__text {
+        flex-direction: column;
     }
 
     &__title {
-        font-size: rem(30);
+        font-size: rem(32);
         font-weight: 300;
         text-align: center;
         margin-top: rem(49);
+        margin-bottom: rem(18);
     }
 
     &__details {
@@ -21,7 +30,7 @@
         color: $darkGray;
         width: rem(272);
         text-align: center;
-        line-height: 1.75;
+        line-height: 1.7;
         margin-top: 0px;
     }
 
