@@ -5,7 +5,11 @@
 
 
     &__image {
+        background-image: url('../../images/mobile/image-interactive.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
         width: rem(327);
+        height: rem(224);
         margin-top: rem(96);
 
         @media (min-width: 64em) {

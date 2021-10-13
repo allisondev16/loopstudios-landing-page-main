@@ -4,7 +4,10 @@
     background-image: url('../../images/mobile/image-hero.jpg');
     background-repeat: no-repeat;
     background-size: cover;
-    height: 100vh;
+    
+    @media (max-width: 63.9375em) {
+        height: 100vh;
+    }
 
     @media (min-width: 64em){
         background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../images/desktop/image-hero.jpg');
@@ -126,8 +129,9 @@
         @media (min-width: 64em){
             font-size: rem(66);
             margin-top: rem(66);
-            margin-left: rem(165);
             margin-right: rem(624);
+            margin-bottom: rem(145);
+            margin-left: rem(165);
             padding: rem(40) rem(0) rem(35) rem(45);
         }
     }

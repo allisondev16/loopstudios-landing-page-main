@@ -61,7 +61,12 @@ body {
   background-image: url("../../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100vh;
+}
+
+@media (max-width: 63.9375em) {
+  .header {
+    height: 100vh;
+  }
 }
 
 @media (min-width: 64em) {
@@ -190,8 +195,9 @@ body {
   .header__text {
     font-size: 4.125rem;
     margin-top: 4.125rem;
-    margin-left: 10.3125rem;
     margin-right: 39rem;
+    margin-bottom: 9.0625rem;
+    margin-left: 10.3125rem;
     padding: 2.5rem 0rem 2.1875rem 2.8125rem;
   }
 }
@@ -204,7 +210,11 @@ body {
 }
 
 .interactive__image {
+  background-image: url("../../images/mobile/image-interactive.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 20.4375rem;
+  height: 14rem;
   margin-top: 6rem;
 }
 
