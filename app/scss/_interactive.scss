@@ -2,6 +2,13 @@
 
 .interactive {
     flex-direction: column;
+    // to be continued: margin-bottom: rem(?);
+
+    @media (min-width: 64em) {
+        flex-direction: row;
+        position: relative;
+        margin-bottom: rem(184);
+    }
 
 
     &__image {
@@ -13,12 +20,27 @@
         margin-top: rem(96);
 
         @media (min-width: 64em) {
-            //to be continued
+            background-image: url('../../images/desktop/image-interactive.jpg');
+            width: rem(732);
+            height: rem(501);
+            margin-top: rem(160);
+            margin-left: rem(165);
         }
     }
 
     &__text {
         flex-direction: column;
+        
+        @media (min-width: 64em) {
+            width: rem(542);
+            padding-top: rem(97);
+            padding-left: rem(97);
+            background-color: $white;
+
+            position: absolute;
+            bottom: 0;
+            left: rem(734);
+        }
     }
 
     &__title {
@@ -27,6 +49,12 @@
         text-align: center;
         margin-top: rem(49);
         margin-bottom: rem(18);
+
+        @media (min-width: 64em) {
+            font-size: rem(48);
+            text-align: left;
+            margin-top: 0px;
+        }
     }
 
     &__details {
@@ -36,6 +64,12 @@
         text-align: center;
         line-height: 1.7;
         margin-top: 0px;
+
+        @media (min-width: 64em) {
+            width: auto;
+            text-align: left;
+            margin-bottom: 0px;
+        }
     }
 
 

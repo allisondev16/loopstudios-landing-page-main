@@ -61,11 +61,12 @@ body {
   background-image: url("../../images/mobile/image-hero.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  height: 41.6875rem;
 }
 
-@media (max-width: 63.9375em) {
+@media (min-width: 64em) {
   .header {
-    height: 100vh;
+    height: 40.625rem;
   }
 }
 
@@ -209,6 +210,17 @@ body {
           flex-direction: column;
 }
 
+@media (min-width: 64em) {
+  .interactive {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    position: relative;
+    margin-bottom: 11.5rem;
+  }
+}
+
 .interactive__image {
   background-image: url("../../images/mobile/image-interactive.jpg");
   background-repeat: no-repeat;
@@ -218,11 +230,33 @@ body {
   margin-top: 6rem;
 }
 
+@media (min-width: 64em) {
+  .interactive__image {
+    background-image: url("../../images/desktop/image-interactive.jpg");
+    width: 45.75rem;
+    height: 31.3125rem;
+    margin-top: 10rem;
+    margin-left: 10.3125rem;
+  }
+}
+
 .interactive__text {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+@media (min-width: 64em) {
+  .interactive__text {
+    width: 33.875rem;
+    padding-top: 6.0625rem;
+    padding-left: 6.0625rem;
+    background-color: white;
+    position: absolute;
+    bottom: 0;
+    left: 45.875rem;
+  }
 }
 
 .interactive__title {
@@ -233,6 +267,14 @@ body {
   margin-bottom: 1.125rem;
 }
 
+@media (min-width: 64em) {
+  .interactive__title {
+    font-size: 3rem;
+    text-align: left;
+    margin-top: 0px;
+  }
+}
+
 .interactive__details {
   font-family: 'Alata', sans-serif;
   color: #8c8c8c;
@@ -240,5 +282,13 @@ body {
   text-align: center;
   line-height: 1.7;
   margin-top: 0px;
+}
+
+@media (min-width: 64em) {
+  .interactive__details {
+    width: auto;
+    text-align: left;
+    margin-bottom: 0px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
