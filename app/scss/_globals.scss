@@ -18,6 +18,16 @@ body {
     
 }
 
+h1 {
+    font-size: rem(32);
+    font-weight: 300;
+    text-align: center;
+
+    @media (min-width: 64em) {
+        font-size: rem(48);
+    }
+}
+
 // Flexbox
 .flex {
     display: flex;

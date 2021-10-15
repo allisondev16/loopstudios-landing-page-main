@@ -1,0 +1,68 @@
+@import "functions";
+
+.creations {
+
+
+    &__title {
+        margin-top: rem(98);
+        margin-bottom: rem(49);
+    }
+
+    &__list {
+        display: grid;
+        grid-template-columns: rem(327);
+        grid-template-rows: repeat(8, rem(120));
+        justify-content: center;
+        row-gap: rem(24);
+
+        div {
+            background-repeat: no-repeat;
+            background-size: cover;
+            color: $white;
+            text-transform: uppercase;
+            font-size: rem(22);
+            
+        }
+
+        .deepEarth {
+            background-image: 
+            url('../../images/mobile/image-deep-earth.jpg');
+        }
+
+        .nightArcade {
+            background-image: 
+            url('../../images/mobile/image-night-arcade.jpg');
+        }
+
+        .soccerTeam {
+            background-image: 
+            url('../../images/mobile/image-soccer-team.jpg');
+        }
+
+        .grid {
+            background-image: 
+            url('../../images/mobile/image-grid.jpg');
+        }
+
+        .fromAbove {
+            background-image: 
+            url('../../images/mobile/image-from-above.jpg');
+        }
+
+        .pocketBorealis {
+            background-image: 
+            url('../../images/mobile/image-pocket-borealis.jpg');
+        }
+
+        .curiosity {
+            background-image: 
+            url('../../images/mobile/image-curiosity.jpg');
+        }
+
+        .fisheye {
+            background-image: 
+            url('../../images/mobile/image-fisheye.jpg');
+        }
+
+    }
+}

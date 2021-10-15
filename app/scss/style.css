@@ -17,6 +17,18 @@ body {
   font-weight: 300;
 }
 
+h1 {
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+}
+
+@media (min-width: 64em) {
+  h1 {
+    font-size: 3rem;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -260,16 +272,12 @@ body {
 }
 
 .interactive__title {
-  font-size: 2rem;
-  font-weight: 300;
-  text-align: center;
   margin-top: 3.0625rem;
   margin-bottom: 1.125rem;
 }
 
 @media (min-width: 64em) {
   .interactive__title {
-    font-size: 3rem;
     text-align: left;
     margin-top: 0px;
   }
@@ -282,13 +290,71 @@ body {
   text-align: center;
   line-height: 1.7;
   margin-top: 0px;
+  margin-bottom: 0px;
 }
 
 @media (min-width: 64em) {
   .interactive__details {
     width: auto;
     text-align: left;
-    margin-bottom: 0px;
   }
+}
+
+.creations__title {
+  margin-top: 6.125rem;
+  margin-bottom: 3.0625rem;
+}
+
+.creations__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 20.4375rem;
+      grid-template-columns: 20.4375rem;
+  -ms-grid-rows: (7.5rem)[8];
+      grid-template-rows: repeat(8, 7.5rem);
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  row-gap: 1.5rem;
+}
+
+.creations__list div {
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+}
+
+.creations__list .deepEarth {
+  background-image: url("../../images/mobile/image-deep-earth.jpg");
+}
+
+.creations__list .nightArcade {
+  background-image: url("../../images/mobile/image-night-arcade.jpg");
+}
+
+.creations__list .soccerTeam {
+  background-image: url("../../images/mobile/image-soccer-team.jpg");
+}
+
+.creations__list .grid {
+  background-image: url("../../images/mobile/image-grid.jpg");
+}
+
+.creations__list .fromAbove {
+  background-image: url("../../images/mobile/image-from-above.jpg");
+}
+
+.creations__list .pocketBorealis {
+  background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+}
+
+.creations__list .curiosity {
+  background-image: url("../../images/mobile/image-curiosity.jpg");
+}
+
+.creations__list .fisheye {
+  background-image: url("../../images/mobile/image-fisheye.jpg");
 }
 /*# sourceMappingURL=style.css.map */
