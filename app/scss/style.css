@@ -42,6 +42,15 @@ h2 {
   margin-bottom: 0px;
 }
 
+@media (min-width: 64em) {
+  h2 {
+    font-size: 1.875rem;
+    width: 10rem;
+    top: 22.1875rem;
+    left: 2.625rem;
+  }
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -315,13 +324,33 @@ h2 {
   }
 }
 
-.creations {
-  text-align: center;
+.creations .container {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media (min-width: 64em) {
+  .creations .container {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 69.625rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5.125rem;
+  }
 }
 
 .creations__title {
   margin-top: 6.125rem;
   margin-bottom: 3.0625rem;
+}
+
+@media (min-width: 64em) {
+  .creations__title {
+    margin: 0px;
+  }
 }
 
 .creations__list {
@@ -337,10 +366,28 @@ h2 {
   row-gap: 1.5rem;
 }
 
+@media (min-width: 64em) {
+  .creations__list {
+    -ms-grid-columns: (16rem)[4];
+        grid-template-columns: repeat(4, 16rem);
+    -ms-grid-rows: (28.125rem)[2];
+        grid-template-rows: repeat(2, 28.125rem);
+    row-gap: 1.875rem;
+    -webkit-column-gap: 1.875rem;
+            column-gap: 1.875rem;
+  }
+}
+
 .creations__list__image {
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.creations__list__image:hover {
+  opacity: 0.3;
 }
 
 .creations__list .deepEarth {
@@ -348,9 +395,23 @@ h2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-deep-earth.jpg");
 }
 
+@media (min-width: 64em) {
+  .creations__list .deepEarth {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-deep-earth.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-deep-earth.jpg");
+  }
+}
+
 .creations__list .nightArcade {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-night-arcade.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-night-arcade.jpg");
+}
+
+@media (min-width: 64em) {
+  .creations__list .nightArcade {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-night-arcade.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-night-arcade.jpg");
+  }
 }
 
 .creations__list .soccerTeam {
@@ -358,9 +419,23 @@ h2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-soccer-team.jpg");
 }
 
+@media (min-width: 64em) {
+  .creations__list .soccerTeam {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-soccer-team.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-soccer-team.jpg");
+  }
+}
+
 .creations__list .grid {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-grid.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-grid.jpg");
+}
+
+@media (min-width: 64em) {
+  .creations__list .grid {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-grid.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-grid.jpg");
+  }
 }
 
 .creations__list .grid h2 {
@@ -372,9 +447,23 @@ h2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-from-above.jpg");
 }
 
+@media (min-width: 64em) {
+  .creations__list .fromAbove {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-from-above.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-from-above.jpg");
+  }
+}
+
 .creations__list .pocketBorealis {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-pocket-borealis.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-pocket-borealis.jpg");
+}
+
+@media (min-width: 64em) {
+  .creations__list .pocketBorealis {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-pocket-borealis.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-pocket-borealis.jpg");
+  }
 }
 
 .creations__list .curiosity {
@@ -382,9 +471,23 @@ h2 {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-curiosity.jpg");
 }
 
+@media (min-width: 64em) {
+  .creations__list .curiosity {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-curiosity.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-curiosity.jpg");
+  }
+}
+
 .creations__list .fisheye {
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-fisheye.jpg");
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-fisheye.jpg");
+}
+
+@media (min-width: 64em) {
+  .creations__list .fisheye {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-fisheye.jpg");
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-fisheye.jpg");
+  }
 }
 
 .creations__seeAll {
@@ -397,7 +500,24 @@ h2 {
   letter-spacing: 0.3125rem;
   padding: 0.5625rem 0px;
   border: 0.09375rem solid;
-  margin: 2.125rem auto;
   background-color: white;
+  -webkit-transition: all 200ms ease-in-out;
+  transition: all 200ms ease-in-out;
+}
+
+.creations__seeAll:hover {
+  background-color: black;
+  color: white;
+  border-color: black;
+}
+
+.creations__seeAll.mobile {
+  margin: 2.125rem auto;
+}
+
+.creations__seeAll.desktop {
+  margin: 0px 0px;
+  padding: 0px;
+  height: 2.625rem;
 }
 /*# sourceMappingURL=style.css.map */

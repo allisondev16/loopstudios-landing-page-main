@@ -39,6 +39,14 @@ h2 {
     width: rem(115);
     margin-top: 0px;
     margin-bottom: 0px;
+
+    @media (min-width: 64em) {
+        font-size: rem(30);
+        width: rem(160);
+        top: rem(355);
+        left: rem(42);
+    }
+
 }
 
 // Flexbox
@@ -73,3 +81,4 @@ h2 {
 .no-scroll {
     overflow: hidden;
 }
+
