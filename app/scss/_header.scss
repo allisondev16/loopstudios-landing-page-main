@@ -5,6 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     height: rem(667);
+    transition: background-image 0.2s ease-in-out;
     
     @media (min-width: 64em) {
         height: rem(650);

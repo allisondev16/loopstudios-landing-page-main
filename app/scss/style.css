@@ -29,6 +29,19 @@ h1 {
   }
 }
 
+h2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 1.375rem;
+  position: absolute;
+  top: 3.3125rem;
+  left: 1.3125rem;
+  font-weight: 300;
+  width: 7.1875rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
 .flex {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -74,6 +87,8 @@ h1 {
   background-repeat: no-repeat;
   background-size: cover;
   height: 41.6875rem;
+  -webkit-transition: background-image 0.2s ease-in-out;
+  transition: background-image 0.2s ease-in-out;
 }
 
 @media (min-width: 64em) {
@@ -300,6 +315,10 @@ h1 {
   }
 }
 
+.creations {
+  text-align: center;
+}
+
 .creations__title {
   margin-top: 6.125rem;
   margin-bottom: 3.0625rem;
@@ -318,43 +337,67 @@ h1 {
   row-gap: 1.5rem;
 }
 
-.creations__list div {
+.creations__list__image {
   background-repeat: no-repeat;
   background-size: cover;
-  color: white;
-  text-transform: uppercase;
-  font-size: 1.375rem;
+  position: relative;
 }
 
 .creations__list .deepEarth {
-  background-image: url("../../images/mobile/image-deep-earth.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-deep-earth.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-deep-earth.jpg");
 }
 
 .creations__list .nightArcade {
-  background-image: url("../../images/mobile/image-night-arcade.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-night-arcade.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-night-arcade.jpg");
 }
 
 .creations__list .soccerTeam {
-  background-image: url("../../images/mobile/image-soccer-team.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-soccer-team.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-soccer-team.jpg");
 }
 
 .creations__list .grid {
-  background-image: url("../../images/mobile/image-grid.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-grid.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-grid.jpg");
+}
+
+.creations__list .grid h2 {
+  width: 6.25rem;
 }
 
 .creations__list .fromAbove {
-  background-image: url("../../images/mobile/image-from-above.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-from-above.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-from-above.jpg");
 }
 
 .creations__list .pocketBorealis {
-  background-image: url("../../images/mobile/image-pocket-borealis.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-pocket-borealis.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-pocket-borealis.jpg");
 }
 
 .creations__list .curiosity {
-  background-image: url("../../images/mobile/image-curiosity.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-curiosity.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-curiosity.jpg");
 }
 
 .creations__list .fisheye {
-  background-image: url("../../images/mobile/image-fisheye.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-fisheye.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-fisheye.jpg");
+}
+
+.creations__seeAll {
+  width: 9.75rem;
+  font-size: 0.875rem;
+  font-family: 'Alata', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 0.3125rem;
+  padding: 0.5625rem 0px;
+  border: 0.09375rem solid;
+  margin: 2.125rem auto;
+  background-color: white;
 }
 /*# sourceMappingURL=style.css.map */

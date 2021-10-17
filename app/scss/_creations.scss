@@ -1,7 +1,7 @@
 @import "functions";
 
 .creations {
-
+    text-align: center; // to center the button "SEE ALL" for mobile
 
     &__title {
         margin-top: rem(98);
@@ -15,54 +15,78 @@
         justify-content: center;
         row-gap: rem(24);
 
-        div {
+        &__image {
             background-repeat: no-repeat;
             background-size: cover;
-            color: $white;
-            text-transform: uppercase;
-            font-size: rem(22);
-            
+            position: relative;
         }
 
         .deepEarth {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-deep-earth.jpg');
         }
 
         .nightArcade {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-night-arcade.jpg');
         }
 
         .soccerTeam {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-soccer-team.jpg');
         }
 
         .grid {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-grid.jpg');
+            
+            h2 {
+                width: rem(100);
+            }
         }
 
         .fromAbove {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-from-above.jpg');
         }
 
         .pocketBorealis {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-pocket-borealis.jpg');
         }
 
         .curiosity {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-curiosity.jpg');
         }
 
         .fisheye {
             background-image: 
+            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
             url('../../images/mobile/image-fisheye.jpg');
         }
 
+    }
+
+    &__seeAll {
+        width: rem(156);
+        font-size: rem(14);
+        font-family: 'Alata', sans-serif;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: rem(5);
+        padding: rem(9) 0px;
+        border: rem(1.5) solid;
+        margin: rem(34) auto;
+        background-color: $white;  
+        
     }
 }

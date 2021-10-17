@@ -28,6 +28,19 @@ h1 {
     }
 }
 
+h2 {
+    color: $white;
+    text-transform: uppercase;
+    font-size: rem(22);
+    position: absolute;
+    top: rem(53);
+    left: rem(21);
+    font-weight: 300;
+    width: rem(115);
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
 // Flexbox
 .flex {
     display: flex;

@@ -49,6 +49,7 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 ### Built with
 
 - CSS BEM
+- Grid
 
 - Semantic HTML5 markup
 - CSS custom properties
@@ -81,6 +82,11 @@ Then crop/optimize/edit your image however you like, add it to your project, and
   Reference: https://www.w3schools.com/cssref/css_units.asp
 
 - Use background-image in css instead of the img tag to be able to change the image through media query.
+
+- Using Grid
+
+- Centering a button inside a div by adding text-align:center on the parent div.
+  Reference: https://stackoverflow.com/questions/3622756/button-center-css
 
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
