@@ -33,14 +33,13 @@ h2 {
   color: white;
   text-transform: uppercase;
   font-size: 1.375rem;
-  position: absolute;
+  position: relative;
   top: 3.3125rem;
   left: 1.3125rem;
   font-weight: 300;
   width: 7.1875rem;
   margin-top: 0px;
   margin-bottom: 0px;
-  z-index: 1;
 }
 
 @media (min-width: 64em) {
@@ -387,8 +386,18 @@ h2 {
   transition: opacity 300ms ease-in-out;
 }
 
-.creations__list__image:hover h2 {
-  color: black;
+.creations__list__image::before {
+  content: '';
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-curiosity.jpg");
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/desktop/image-curiosity.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.25;
 }
 
 .creations__list .deepEarth {
@@ -464,18 +473,6 @@ h2 {
   .creations__list .pocketBorealis {
     background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-pocket-borealis.jpg");
     background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-pocket-borealis.jpg");
-  }
-}
-
-.creations__list .curiosity {
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0))), url("../../images/mobile/image-curiosity.jpg");
-  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)), url("../../images/mobile/image-curiosity.jpg");
-}
-
-@media (min-width: 64em) {
-  .creations__list .curiosity {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0))), url("../../images/desktop/image-curiosity.jpg");
-    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0)), url("../../images/desktop/image-curiosity.jpg");
   }
 }
 

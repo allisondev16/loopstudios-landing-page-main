@@ -43,10 +43,26 @@
             position: relative;
             transition: opacity 300ms ease-in-out;
 
+            &::before {
+                content: '';
+                background-image: 
+                    linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
+                    url('../../images/desktop/image-curiosity.jpg');
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                top: 0px;
+                right: 0px;
+                bottom: 0px;
+                left: 0px;
+                opacity: 0.25;
+
+            }
+
             &:hover {
                 
                 h2 {
-                    color: $black;
+                    //color: $black;
                     
                 }
             }
@@ -128,17 +144,17 @@
             }
         }
 
-        .curiosity {
-            background-image: 
-            linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
-            url('../../images/mobile/image-curiosity.jpg');
+        // .curiosity {
+        //     background-image: 
+        //     linear-gradient(to right, rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0)),
+        //     url('../../images/mobile/image-curiosity.jpg');
 
-            @media (min-width: 64em) {
-                background-image: 
-                linear-gradient(to top, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),
-                url('../../images/desktop/image-curiosity.jpg');
-            }
-        }
+        //     @media (min-width: 64em) {
+        //         background-image: 
+        //         linear-gradient(to top, rgba(0, 0, 0, 0.6),rgba(0, 0, 0, 0)),
+        //         url('../../images/desktop/image-curiosity.jpg');
+        //     }
+        // }
 
         .fisheye {
             background-image: 
