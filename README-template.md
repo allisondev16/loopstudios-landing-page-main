@@ -88,6 +88,8 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Centering a button inside a div by adding text-align:center on the parent div.
   Reference: https://stackoverflow.com/questions/3622756/button-center-css
 
+- When I tried to apply opacity for the backgorund-image when hovered but the text is also affected, so I used pseudo-element ::before to separate the background-image to the parent div, thank you Coder Coder (Reference: https://www.youtube.com/watch?v=LQsjNmkqUOc)
+
 Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
 To see how you can add code snippets, see below:

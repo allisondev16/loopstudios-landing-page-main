@@ -39,10 +39,11 @@ h2 {
     width: rem(115);
     margin-top: 0px;
     margin-bottom: 0px;
+    transition: color 200ms ease-in-out;
 
     @media (min-width: 64em) {
-        font-size: rem(30);
-        width: rem(160);
+        font-size: rem(32);
+        width: rem(165);
         top: rem(355);
         left: rem(42);
     }
