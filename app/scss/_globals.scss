@@ -49,6 +49,11 @@ h2 {
     }
 }
 
+.container {
+    max-width: rem(1114);
+    margin: 0 auto;
+}
+
 // Flexbox
 .flex {
     display: flex;

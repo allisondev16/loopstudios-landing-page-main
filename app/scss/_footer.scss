@@ -1,22 +1,37 @@
 @import "functions";
 
 .footer {
-
     background-color: $black;
-    text-align: center;
-    font-family: 'Alata', sans-serif;
-    padding: rem(56) 0px;
+    
+    .container {
+        text-align: center;
+        font-family: 'Alata', sans-serif;
+        padding: rem(56) 0px;
 
-    @media (min-width: 64em) {
-        display: grid;
-        grid-template-columns: repeat(2, auto);
-        grid-template-rows: repeat(2, auto);
-        grid-template-areas: 
-            "logo social"
-            "links copyright";
-        row-gap: rem(30);
-        column-gap: rem(30);
-        justify-items: start;
+        @media (min-width: 64em) {
+            display: grid;
+            grid-template-columns: repeat(2, auto);
+            grid-template-rows: repeat(2, auto);
+            grid-template-areas: 
+                "logo social"
+                "links copyright";
+            row-gap: rem(30);
+            column-gap: rem(30);
+            justify-items: start;
+            padding: rem(47) 0px;
+        }
+    }
+
+    &__logo {
+
+        @media (min-width: 64em) {
+            grid-area: logo;
+        }
+
+        img {
+            height: rem(24);
+        }
+
     }
 
     &__links {
@@ -71,10 +86,15 @@
 
         @media (min-width: 64em) {
             justify-self: end;
+            grid-area: social;
         }
 
-        a:not(:last-child) {
-            margin-right: 14px;
+        a {
+            text-decoration: none;
+
+            &:not(:last-child) {
+                margin-right: 14px;
+            }
         }
     }
 
@@ -85,6 +105,7 @@
         @media (min-width: 64em) {
             justify-self: end;
             margin: 0px;
+            grid-area: copyright;
         }
     }
 }

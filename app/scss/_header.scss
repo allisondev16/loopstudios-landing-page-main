@@ -43,14 +43,12 @@
 
     &__logo {
         img {
-        width: rem(144);
-        height: auto;
-        vertical-align: bottom;
+            height: rem(24);
+            vertical-align: bottom;
 
-        @media (min-width: 64em) {
-            height: rem(32);
-            width: auto;
-        }
+            @media (min-width: 64em) {
+                height: rem(32);
+            }
         }
     }
 
