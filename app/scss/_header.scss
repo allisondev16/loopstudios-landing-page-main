@@ -84,12 +84,15 @@
 
             &::before {
                 content: "";
-                height: rem(2);
+                height: 2px;
+                width: 24px;
                 background-color: $white;
                 position: absolute;
-                top: rem(30);
-                left: rem(15);
-                right: rem(15);
+                top: 30px;
+                left: 0px;
+                right: 0px;
+                margin-left: auto;
+                margin-right: auto;
                 display: block; 
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;

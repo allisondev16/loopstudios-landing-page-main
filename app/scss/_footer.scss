@@ -15,7 +15,7 @@
             grid-template-areas: 
                 "logo social"
                 "links copyright";
-            row-gap: rem(30);
+            row-gap: rem(25);
             column-gap: rem(30);
             justify-items: start;
             padding: rem(47) 0px;
@@ -62,12 +62,15 @@
     
                 &::before {
                     content: "";
-                    height: rem(2);
+                    height: 2px;
+                    width: 24px;
                     background-color: $white;
                     position: absolute;
-                    top: rem(30);
-                    left: rem(15);
-                    right: rem(15);
+                    top: 30px;
+                    left: 0px;
+                    right: 0px;
+                    margin-left: auto;
+                    margin-right: auto;
                     display: block; 
                     opacity: 0;
                     transition: opacity 300ms ease-in-out;
@@ -91,9 +94,29 @@
 
         a {
             text-decoration: none;
+            position: relative;
 
             &:not(:last-child) {
                 margin-right: 14px;
+            }
+
+            &::before {
+                content: "";
+                height: 2px;
+                width: 24px;
+                background-color: $white;
+                position: absolute;
+                top: 25px;
+                left: 0;
+                display: block; 
+                opacity: 0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover {
+                &::before {
+                    opacity: 1;
+                }
             }
         }
     }

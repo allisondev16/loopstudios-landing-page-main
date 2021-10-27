@@ -189,12 +189,15 @@ h2 {
 
 .header__links a::before {
   content: "";
-  height: 0.125rem;
+  height: 2px;
+  width: 24px;
   background-color: white;
   position: absolute;
-  top: 1.875rem;
-  left: 0.9375rem;
-  right: 0.9375rem;
+  top: 30px;
+  left: 0px;
+  right: 0px;
+  margin-left: auto;
+  margin-right: auto;
   display: block;
   opacity: 0;
   -webkit-transition: opacity 300ms ease-in-out;
@@ -561,7 +564,7 @@ h2 {
     -ms-grid-rows: (auto)[2];
         grid-template-rows: repeat(2, auto);
         grid-template-areas: "logo social" "links copyright";
-    row-gap: 1.875rem;
+    row-gap: 1.5625rem;
     -webkit-column-gap: 1.875rem;
             column-gap: 1.875rem;
     justify-items: start;
@@ -612,12 +615,15 @@ h2 {
   }
   .footer__links a::before {
     content: "";
-    height: 0.125rem;
+    height: 2px;
+    width: 24px;
     background-color: white;
     position: absolute;
-    top: 1.875rem;
-    left: 0.9375rem;
-    right: 0.9375rem;
+    top: 30px;
+    left: 0px;
+    right: 0px;
+    margin-left: auto;
+    margin-right: auto;
     display: block;
     opacity: 0;
     -webkit-transition: opacity 300ms ease-in-out;
@@ -638,10 +644,29 @@ h2 {
 
 .footer__social a {
   text-decoration: none;
+  position: relative;
 }
 
 .footer__social a:not(:last-child) {
   margin-right: 14px;
+}
+
+.footer__social a::before {
+  content: "";
+  height: 2px;
+  width: 24px;
+  background-color: white;
+  position: absolute;
+  top: 25px;
+  left: 0;
+  display: block;
+  opacity: 0;
+  -webkit-transition: opacity 300ms ease-in-out;
+  transition: opacity 300ms ease-in-out;
+}
+
+.footer__social a:hover::before {
+  opacity: 1;
 }
 
 .footer__copyright {
