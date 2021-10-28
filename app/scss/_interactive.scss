@@ -5,8 +5,8 @@
 
     @media (min-width: 64em) {
         flex-direction: row;
-        position: relative;
         margin-bottom: rem(184);
+        position: relative;
     }
 
 
@@ -37,8 +37,12 @@
             background-color: $white;
 
             position: absolute;
-            bottom: 0;
             left: rem(734);
+            bottom: 0px;
+            left: 0px;
+            right: 0px;
+            margin-left: auto;
+            margin-right: auto;
         }
     }
 
