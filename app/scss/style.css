@@ -145,7 +145,11 @@ h2 {
 
 @media (min-width: 64em) {
   .header nav {
-    padding: 4rem 10.3125rem;
+    width: 1158px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 64px;
+    padding-bottom: 64px;
   }
 }
 
@@ -244,6 +248,7 @@ h2 {
     margin-bottom: 9.0625rem;
     margin-left: 10.3125rem;
     padding: 2.5rem 0rem 2.1875rem 2.8125rem;
+    width: 40.6875rem;
   }
 }
 
@@ -280,7 +285,10 @@ h2 {
     width: 45.75rem;
     height: 31.3125rem;
     margin-top: 10rem;
-    margin-left: 10.3125rem;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    right: 11.8125rem;
   }
 }
 
@@ -298,10 +306,9 @@ h2 {
     padding-left: 6.0625rem;
     background-color: white;
     position: absolute;
-    left: 45.875rem;
-    bottom: 0px;
-    left: 0px;
     right: 0px;
+    bottom: 0px;
+    left: 36.875rem;
     margin-left: auto;
     margin-right: auto;
   }

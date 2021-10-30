@@ -37,7 +37,11 @@
         padding: rem(40) rem(24);
 
         @media (min-width: 64em) {
-            padding: rem(64) rem(165);
+            width: 1158px;
+            margin-left: auto;
+            margin-right: auto;
+            padding-top: 64px;
+            padding-bottom: 64px;
         }
     }
 
@@ -136,6 +140,7 @@
             margin-bottom: rem(145);
             margin-left: rem(165);
             padding: rem(40) rem(0) rem(35) rem(45);
+            width: rem(651);
         }
     }
 }
