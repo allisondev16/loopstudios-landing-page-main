@@ -19,7 +19,7 @@ This is a solution to the [Loopstudios landing page challenge on Frontend Mentor
 
 ### Links
 
-- Live Site URL: [Live site URL](https://allisondev16.github.io/loopstudios-landing-page-main/)
+- Live Site URL: https://allisondev16.github.io/loopstudios-landing-page-main/
 
 ### The challenge
 
