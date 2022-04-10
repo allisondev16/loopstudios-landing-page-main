@@ -5,7 +5,9 @@ html {
     box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
     box-sizing: inherit;
 }
 
@@ -15,7 +17,7 @@ body {
     font-family: 'Josefin Sans', sans-serif;
     font-size: rem(15);
     font-weight: 300;
-    
+
 }
 
 h1 {
@@ -50,8 +52,10 @@ h2 {
 }
 
 .container {
-    max-width: rem(1114);
-    margin: 0 auto;
+    @media (min-width: 64em) {
+        max-width: rem(1114);
+        margin: 0 auto;
+    }
 }
 
 // Flexbox
@@ -86,4 +90,3 @@ h2 {
 .no-scroll {
     overflow: hidden;
 }
-

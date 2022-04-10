@@ -4,7 +4,9 @@ html {
           box-sizing: border-box;
 }
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   -webkit-box-sizing: inherit;
           box-sizing: inherit;
 }
@@ -53,9 +55,11 @@ h2 {
   }
 }
 
-.container {
-  max-width: 69.625rem;
-  margin: 0 auto;
+@media (min-width: 64em) {
+  .container {
+    max-width: 69.625rem;
+    margin: 0 auto;
+  }
 }
 
 .flex {
@@ -145,11 +149,15 @@ h2 {
 
 @media (min-width: 64em) {
   .header nav {
-    width: 1158px;
-    margin-left: auto;
-    margin-right: auto;
     padding-top: 64px;
     padding-bottom: 64px;
+  }
+}
+
+@media (min-width: 64em) {
+  .header__container {
+    max-width: 72.375rem;
+    margin: 0 auto;
   }
 }
 
@@ -244,9 +252,7 @@ h2 {
   .header__text {
     font-size: 4.125rem;
     margin-top: 4.125rem;
-    margin-right: 39rem;
     margin-bottom: 9.0625rem;
-    margin-left: 10.3125rem;
     padding: 2.5rem 0rem 2.1875rem 2.8125rem;
     width: 40.6875rem;
   }
@@ -354,7 +360,6 @@ h2 {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 69.625rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5.125rem;

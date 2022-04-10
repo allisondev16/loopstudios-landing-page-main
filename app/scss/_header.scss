@@ -6,28 +6,28 @@
     background-size: cover;
     height: rem(667);
     transition: background-image 0.2s ease-in-out;
-    
+
     @media (min-width: 64em) {
         height: rem(650);
     }
 
-    @media (min-width: 64em){
-        background-image: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)), url('../../images/desktop/image-hero.jpg');
+    @media (min-width: 64em) {
+        background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../../images/desktop/image-hero.jpg');
     }
 
     &.open {
-        background-image: linear-gradient(rgb(0, 0, 0),rgb(0, 0, 0));
-        
+        background-image: linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+
         .header__toggle {
-            > span {
+            >span {
                 transform: rotate(45deg);
             }
 
-            > span:nth-child(2) {
+            >span:nth-child(2) {
                 opacity: 0;
             }
 
-            > span:last-child {
+            >span:last-child {
                 transform: rotate(-45deg);
             }
         }
@@ -37,11 +37,16 @@
         padding: rem(40) rem(24);
 
         @media (min-width: 64em) {
-            width: 1158px;
-            margin-left: auto;
-            margin-right: auto;
             padding-top: 64px;
             padding-bottom: 64px;
+        }
+    }
+
+    &__container {
+
+        @media (min-width: 64em) {
+            max-width: rem(1158);
+            margin: 0 auto;
         }
     }
 
@@ -57,8 +62,8 @@
     }
 
     &__toggle {
-    
-        > span {
+
+        >span {
             display: block;
             width: rem(24);
             height: rem(2);
@@ -66,7 +71,7 @@
             transition: all 300ms ease-in-out;
             transform-origin: 2px 1px;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-bottom: rem(5);
             }
 
@@ -74,7 +79,7 @@
     }
 
     &__links {
-        
+
         a {
             text-decoration: none;
             font-family: 'Alata', sans-serif;
@@ -82,7 +87,7 @@
             font-weight: 400;
             position: relative;
 
-            &:not(:last-child){
+            &:not(:last-child) {
                 margin-right: rem(30);
             }
 
@@ -97,7 +102,7 @@
                 right: 0px;
                 margin-left: auto;
                 margin-right: auto;
-                display: block; 
+                display: block;
                 opacity: 0;
                 transition: opacity 300ms ease-in-out;
             }
@@ -122,7 +127,7 @@
             font-weight: 400;
             line-height: 2.2;
             margin-left: rem(24);
-            
+
         }
     }
 
@@ -131,14 +136,12 @@
         font-size: rem(38);
         margin: rem(120) rem(24);
         padding: rem(24) rem(30) rem(24) rem(24);
-        border: solid $white ;
+        border: solid $white;
 
-        @media (min-width: 64em){
+        @media (min-width: 64em) {
             font-size: rem(66);
             margin-top: rem(66);
-            margin-right: rem(624);
             margin-bottom: rem(145);
-            margin-left: rem(165);
             padding: rem(40) rem(0) rem(35) rem(45);
             width: rem(651);
         }
